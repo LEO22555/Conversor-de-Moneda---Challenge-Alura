@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversion Result</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<h1>Conversion Result</h1>
+<p th:text="'Converted Amount: ' + ${#numbers.format(convertedAmount, '0.00')} + ' ' + ${toCurrency}"></p>
+<a href="/">Back</a>
+</body>
+</html>
